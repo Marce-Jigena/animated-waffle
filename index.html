@@ -5,48 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/stylesheet.css">
-    <title>Document</title>
+    <title>Queseria de mi sin ti</title>
 </head>
 <body>
     <div class="container">
         <header>
             <nav class="navbar">
-                <a href="#" class="logo">Imagen logo</a>
+                <a href="#" class="logo">
+                    <img src="IMG/LogoQSDMST.PNG" alt="">
+                </a>
                 <ul>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Boton 1</a>
+                        <a href="#" class="nav-link" id="boton">Boton 1</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Boton 2</a>
+                        <a href="#" class="nav-link" id="boton">Boton 2</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Boton 3</a>
+                    <li class="nav-item" id>
+                        <a href="#" class="nav-link" id="boton">Boton 3</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#" id="carrito">Carrito</a>
+                    <li class="nav-item" id="carrito">
+                        <a href="#">Carrito</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#" id="usuario">Usuario</a>
+                    <li class="nav-item" id="usuario">
+                        <a href="#">Usuario</a>
                     </li>
                 </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </nav>
-        </header>
-    </div>
-    <main>
-     <div class="carrusel-promo">Promo</div>
-    </main>
-    <div class="carrusel-items">
-        <div id="contenido1">contenido1</div>
-        <div id="contenido2">contenido2</div>
-        <div id="contenido3">contenido3</div>
-        <div id="contenido4">contenido4</div>
-        <div id="contenido5">contenido5</div>
-        <div id="contenido6">contenido5</div>
-    </div>
-    <div class="otros">
-        <div id="otro1">otro1</div>
-        <div id="otro2">otro2</div>
+        </header> 
+        <section aria-label="Newest Photos">
+            <div class="carousel-noticias" data-carousel>
+            <button class="carousel-button prev" data-carousel-button="prev">&#8249;</button>
+            <button class="carousel-button next" data-carousel-button="next">&#8250;</button>
+            <ul data-slides>
+                <li class="slide" data-active>
+                    <img src="IMG/Bard_1.jpg" alt="Imagen de Bardo">
+                </li>
+                <li class="slide">
+                    <img src="IMG/Bard_17.jpg" alt="Imagen de Bardo">
+                </li>
+                <li class="slide">
+                    <img src="IMG/Bard_5.jpg" alt="Imagen de Bardo">
+                </li>
+            </ul>
+            </div>
+        </section>
+
+        <div class="carrusel-items">
+            <span id="flecha-derecha" class="slider-carrousel"></span>
+            <span id="contenido1">contenido1</span>
+            <span id="contenido2">contenido2</span>
+            <span id="contenido3">contenido3</span>
+            <span id="contenido4">contenido4</span>
+        </div>
+        <div class="otros-container">
+            <span id="otro1">otro1</span>>
+            <span id="otro2">otro2</span>>
+        </div>
     </div>
     <footer>Footer</footer>
+<script src="JS/scripts.js" defer></script>
 </body>
 </html>
