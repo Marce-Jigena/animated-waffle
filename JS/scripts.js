@@ -1,5 +1,3 @@
-const buttons = document.querySelectorAll("[data-carousel-button]")
-
 buttons.forEach(button => {
     button.addEventListener("click",() =>{
         const offset = button.dataset.carouselButton === "next" ? 1 : -1;
@@ -12,6 +10,22 @@ buttons.forEach(button => {
         slides.children[newIndex].dataset.active = true;
         delete activeSlide.dataset.active;
 
-        /*Por algun motivo esto no vuelve al principio asi que arreglalo*/
+    })
+});
+
+const productContainers = [...document.querySelectorAll('.product-container')];
+const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
+const preBtn = [...document.querySelectorAll('.pre-btn')];
+
+productContainers.forEach((item, i) => {
+    let containerDimensions = item.getBoundingClientRect();
+    let containerWidth = containerDimensions.width;
+
+    nxtBtn[i].addEventListener('click', () => {
+        item.scrollLeft += containerWidth;
+    })
+
+    preBtn[i].addEventListener('click', () => {
+        item.scrollLeft -= containerWidth;
     })
 });
