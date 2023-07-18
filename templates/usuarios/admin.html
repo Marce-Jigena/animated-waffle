@@ -1,0 +1,28 @@
+{% include 'header.html' %}
+    <table class="table table-light">
+        <thead class="thead-light">
+            <tr>
+                <th>#</th>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Contraseña</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for usuario in usuarios %}
+            <tr>
+                <td>{{usuario[0]}}</td>
+                <td>{{usuario[1]}}</td>
+                <td>{{usuario[2]}}</td>
+                <td>{{usuario[3]}}</td>
+                <td>
+                    <a class="btn btn-warning" href="edit/{{usuario[0]}}">Editar</a>  | 
+                    <a class="btn btn-danger" onclick="return confirm('¿Desea eliminar a {{usuario[1]}}?')"href="destroy/{{usuario[0]}}">Borrar</a> 
+                </td>
+            </tr>  
+            {% endfor %}
+
+        </tbody>
+    </table>
+{% include 'footer.html' %}

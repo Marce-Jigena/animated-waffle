@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="IMG/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/stylesheet.css')}}">
+    <title>Queseria de mi sin ti</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar">
+                <a href="{{url_for('index')}}" class="logo">
+                    <img src="IMG/LogoQSDMST.PNG" alt="">
+                </a>
+                <ul>
+                    <li class="nav-item" id="boton">
+                        <a href="{{url_for('admin')}}" class="nav-link">Iniciar Sesion</a>
+                    </li>
+                    <li class="nav-item" id="boton">
+                        <a href="{{url_for('register')}}" class="nav-link">Registrarse</a>
+                    </li>
+                    <li class="nav-item" id="carrito">
+                        <img src="IMG/CarritoB.png" alt="">
+                    </li>
+                    <li class="nav-item" id="usuario">
+                        <img src="IMG/UsuarioB.png" alt="">
+                    </li>
+                </ul>
+            </nav>
+        </header> 
+        <section aria-label="Newest Photos">
+            <div class="carousel-noticias" data-carousel>
+            <button class="carousel-button prev" data-carousel-button="prev">&#8249;</button>
+            <button class="carousel-button next" data-carousel-button="next">&#8250;</button>
+            <ul data-slides>
+                <li class="slide" data-active>
+                    <img src="IMG/FotoPromo.jpg" alt="Imagen de una picada">
+                </li>
+                <li class="slide">
+                    <img src="IMG/Fotopromo2.jpg" alt="Imagen de una picada">
+                </li>
+                <li class="slide">
+                    <img src="IMG/Fotopromo3.jpg" alt="Imagen de una picada">
+                </li>
+            </ul>
+            </div>
+        </section>
+        <section class="product">
+            <h2 class="product-category">Ofertas</h2>            
+            <div class="product-container">
+                <button class="pre-btn">&#8249;</button>
+                <button class="nxt-btn">&#8250;</button>
+                <div class="product-card">
+                    <div class="product-img">
+                        <span class="product-text"></span>
+                        <img src="IMG/Fotoproducto7.jpg" alt="" class="product-thumb">
+                        <button class="card-btn">Añadir al carrito</button>
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-contains">Nombre del producto</h2>
+                        <p class="product-description">Producto detallado</p>
+                        <span class="price">2000$</span><span class="actual-price">3500$</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <span class="product-text"></span>
+                        <img src="IMG/Fotoproducto.jpg" alt="" class="product-thumb">
+                        <button class="card-btn">Añadir al carrito</button>
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-contains">Nombre del producto</h2>
+                        <p class="product-description">Producto detallado</p>
+                        <span class="price">1000$</span><span class="actual-price">2500$</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <span class="product-text"></span>
+                        <img src="IMG/Fotoproducto2.jpg" alt="" class="product-thumb">
+                        <button class="card-btn">Añadir al carrito</button>
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-contains">Nombre del producto</h2>
+                        <p class="product-description">Producto detallado</p>
+                        <span class="price">4500$</span><span class="actual-price">6500$</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <span class="product-text"></span>
+                        <img src="IMG/Fotoproducto3.jpg" alt="" class="product-thumb">
+                        <button class="card-btn">Añadir al carrito</button>
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-contains">Nombre del producto</h2>
+                        <p class="product-description">Producto detallado</p>
+                        <span class="price">1500$</span><span class="actual-price">2000$</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <span class="product-text"></span>
+                        <img src="IMG/Fotoproducto4.jpg" alt="" class="product-thumb">
+                        <button class="card-btn">Añadir al carrito</button>
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-contains">Nombre del producto</h2>
+                        <p class="product-description">Producto detallado</p>
+                        <span class="price">2000$</span><span class="actual-price">3500$</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <span class="product-text"></span>
+                        <img src="IMG/Fotoproducto5.jpg" alt="" class="product-thumb">
+                        <button class="card-btn">Añadir al carrito</button>
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-contains">Nombre del producto</h2>
+                        <p class="product-description">Producto detallado</p>
+                        <span class="price">1000$</span><span class="actual-price">2500$</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <span class="product-text"></span>
+                        <img src="IMG/Fotoproducto6.jpg" alt="" class="product-thumb">
+                        <button class="card-btn">Añadir al carrito</button>
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-contains">Nombre del producto</h2>
+                        <p class="product-description">Producto detallado</p>
+                        <span class="price">5000$</span><span class="actual-price">7500$</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <span class="product-text"></span>
+                        <img src="IMG/Fotoproducto8.jpg" alt="" class="product-thumb">
+                        <button class="card-btn">Añadir al carrito</button>
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-contains">Nombre del producto</h2>
+                        <p class="product-description">Producto detallado</p>
+                        <span class="price">1200$</span><span class="actual-price">2500$</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <span class="product-text"></span>
+                        <img src="IMG/Fotoproducto9.png" alt="" class="product-thumb">
+                        <button class="card-btn">Añadir al carrito</button>
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-contains">Nombre del producto</h2>
+                        <p class="product-description">Producto detallado</p>
+                        <span class="price">3000$</span><span class="actual-price">4300$</span>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img">
+                            <span class="product-text"></span>
+                            <img src="IMG/Fotoproducto10.jpg" alt="" class="product-thumb">
+                            <button class="card-btn">Añadir al carrito</button>
+                        </div>
+                        <div class="product-info">
+                            <h2 class="product-contains">Nombre del producto</h2>
+                            <p class="product-description">Producto detallado</p>
+                            <span class="price">2000$</span><span class="actual-price">5500$</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="otros-container">
+            <div class="otros">
+                <img src="IMG/Vino.jpg" class="otros-img" alt="">
+                <div class="otros-block">VINOS</div>
+            </div>
+            <div class="otros">
+                <img src="IMG/quesos.jpg" class="otros-img" alt="">
+                <div class="otros-block">QUESOS</div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="categorias-foot">
+            <h2 class="item-foot">Categorias</h2>
+            <ul>
+                <li><a href="{{url_for('index')}}" class="item-foot">Inicio</a></li>
+                <li><a href="{{url_for('admin')}}" class="item-foot">Admin</a></li>
+                <li><a href="{{url_for('register')}}" class="item-foot">Registrase</a></li>
+            </ul>
+        </div>
+        <div class="links-foot">
+        <div class="icon-foot">
+            <a href="#" class="fa fa-facebook">
+                <a href="#" class="text-foot">https://es-la.facebook.com/queseriademi/</a>
+            </a>
+        </div>
+        <div class="icon-foot">
+            <a href="#" class="fa fa-twitter">
+                <a href="#" class="text-foot">https://twitter.com/queseriademi</a>
+            </a>
+        </div>       
+        <div class="icon-foot">
+            <a href="#" class="fa fa-instagram">
+                <a href="#" class="text-foot">https://instagram.com/queseriademi</a>
+            </a>
+        </div>
+    </div>
+    </footer>
+<script src="{{ url_for('static', filename='JS/scripts.js') }}" defer></script>
+</body>
+</html>
